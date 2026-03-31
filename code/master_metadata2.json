@@ -1,0 +1,1462 @@
+{
+    "description": "Complete master metadata manifest for DataSimple.education chatbot. Use the accompanying Python script to split these into individual Bedrock sidecar files.",
+    "documents": [
+        {
+            "filename": "drugged-islanders-analysis.md",
+            "metadataAttributes": {
+                "title": "Drugged Islanders Analysis",
+                "contentType": "data_analysis_guided_project",
+                "difficultyLevel": 1,
+                "topic": "Data Analysis",
+                "libraries": [
+                    "Pandas"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "dog-breed-analysis.md",
+            "metadataAttributes": {
+                "title": "Dog Breed Analysis",
+                "contentType": "data_analysis_guided_project",
+                "difficultyLevel": 2,
+                "topic": "Data Analysis",
+                "libraries": [
+                    "Pandas"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "develop-marketing-campaign-customer-data.md",
+            "metadataAttributes": {
+                "title": "Develop Marketing Campaign with Customer Data",
+                "contentType": "data_analysis_guided_project",
+                "difficultyLevel": 3,
+                "topic": "Data Analysis",
+                "libraries": [
+                    "Pandas"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "google-forms-survey-responses.md",
+            "metadataAttributes": {
+                "title": "Google Forms Survey Responses",
+                "contentType": "data_analysis_guided_project",
+                "difficultyLevel": 3,
+                "topic": "Data Analysis",
+                "libraries": [
+                    "Pandas",
+                    "Seaborn"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "supermarket-customer-analytics.md",
+            "metadataAttributes": {
+                "title": "Supermarket Customer Analytics",
+                "contentType": "data_analysis_guided_project",
+                "difficultyLevel": 4,
+                "topic": "Data Analysis",
+                "libraries": [
+                    "Pandas"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "netflix-movies-tv-shows.md",
+            "metadataAttributes": {
+                "title": "Netflix Movies and TV Shows",
+                "contentType": "data_analysis_guided_project",
+                "difficultyLevel": 5,
+                "topic": "Data Analysis",
+                "libraries": [
+                    "Pandas",
+                    "Seaborn",
+                    "WordCloud"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "ukraine-war-data-analysis.md",
+            "metadataAttributes": {
+                "title": "Ukraine War Data Analysis",
+                "contentType": "data_analysis_guided_project",
+                "difficultyLevel": 5,
+                "topic": "Data Analysis",
+                "libraries": [
+                    "Pandas"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "data-analyst-job-listings.md",
+            "metadataAttributes": {
+                "title": "Data Analyst Job Listings",
+                "contentType": "data_analysis_guided_project",
+                "difficultyLevel": 6,
+                "topic": "Data Analysis",
+                "libraries": [
+                    "Pandas"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "sri-lanka-economic-analysis.md",
+            "metadataAttributes": {
+                "title": "Sri Lanka Economic Analysis",
+                "contentType": "data_analysis_guided_project",
+                "difficultyLevel": 7,
+                "topic": "Data Analysis",
+                "libraries": [
+                    "Pandas"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "spaceship-titanic-data-analysis.md",
+            "metadataAttributes": {
+                "title": "Spaceship Titanic Data Analysis",
+                "contentType": "data_analysis_guided_project",
+                "difficultyLevel": 8,
+                "topic": "Data Analysis",
+                "libraries": [
+                    "Pandas",
+                    "Seaborn"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "simple-linear-regression-house-price.md",
+            "metadataAttributes": {
+                "title": "Simple Linear Regression House Price",
+                "contentType": "ML_guided_project",
+                "difficultyLevel": 1,
+                "topic": "Machine Learning",
+                "libraries": [
+                    "Sklearn",
+                    "Pandas",
+                    "Seaborn"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "simple-random-forest-classification.md",
+            "metadataAttributes": {
+                "title": "Simple Random Forest Classification",
+                "contentType": "ML_guided_project",
+                "difficultyLevel": 1,
+                "topic": "Machine Learning",
+                "libraries": [
+                    "Sklearn"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "simple-clustering-iris-flowers.md",
+            "metadataAttributes": {
+                "title": "Simple Clustering Iris Flowers",
+                "contentType": "ML_guided_project",
+                "difficultyLevel": 1,
+                "topic": "Machine Learning",
+                "libraries": [
+                    "Sklearn",
+                    "Yellowbrick"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "smart-watch-price-prediction.md",
+            "metadataAttributes": {
+                "title": "Smart Watch Price Prediction",
+                "contentType": "ML_guided_project",
+                "difficultyLevel": 3,
+                "topic": "Machine Learning",
+                "libraries": [
+                    "Sklearn"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "classic-car-mpg-regression.md",
+            "metadataAttributes": {
+                "title": "Classic Car MPG Regression",
+                "contentType": "ML_guided_project",
+                "difficultyLevel": 3,
+                "topic": "Machine Learning",
+                "libraries": [
+                    "Sklearn"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "credit-card-approvals.md",
+            "metadataAttributes": {
+                "title": "Credit Card Approvals",
+                "contentType": "ML_guided_project",
+                "difficultyLevel": 4,
+                "topic": "Machine Learning",
+                "libraries": [
+                    "Sklearn",
+                    "Yellowbrick"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "polish-car-price-regression.md",
+            "metadataAttributes": {
+                "title": "Polish Car Price Regression",
+                "contentType": "ML_guided_project",
+                "difficultyLevel": 5,
+                "topic": "Machine Learning",
+                "libraries": [
+                    "Sklearn"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "decision-tree-pre-post-pruning.md",
+            "metadataAttributes": {
+                "title": "Decision Tree Pre and Post Pruning",
+                "contentType": "ML_guided_project",
+                "difficultyLevel": 6,
+                "topic": "Machine Learning",
+                "libraries": [
+                    "Sklearn",
+                    "Yellowbrick"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "power-transformer-ensemble-method.md",
+            "metadataAttributes": {
+                "title": "Power Transformer Ensemble Method",
+                "contentType": "ML_guided_project",
+                "difficultyLevel": 7,
+                "topic": "Machine Learning",
+                "libraries": [
+                    "Sklearn"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "spaceship-titanic-ml-predict-part2.md",
+            "metadataAttributes": {
+                "title": "Spaceship Titanic ML Predict Part 2",
+                "contentType": "ML_guided_project",
+                "difficultyLevel": 8,
+                "topic": "Machine Learning",
+                "libraries": [
+                    "Sklearn"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "advanced-linear-regression-house-price.md",
+            "metadataAttributes": {
+                "title": "Advanced Linear Regression House Price",
+                "contentType": "ML_guided_project",
+                "difficultyLevel": 8,
+                "topic": "Machine Learning",
+                "libraries": [
+                    "Sklearn"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "lstm-google-stock-prediction-part1.md",
+            "metadataAttributes": {
+                "title": "LSTM Google Stock Prediction Part 1",
+                "contentType": "Deep_Learning_guided_project",
+                "difficultyLevel": 1,
+                "topic": "Deep Learning",
+                "libraries": [
+                    "TensorFlow",
+                    "Pandas"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "lstm-google-stock-prediction-part2.md",
+            "metadataAttributes": {
+                "title": "LSTM Google Stock Prediction Part 2",
+                "contentType": "Deep_Learning_guided_project",
+                "difficultyLevel": 2,
+                "topic": "Deep Learning",
+                "libraries": [
+                    "TensorFlow"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "simple-computer-vision-pneumonia.md",
+            "metadataAttributes": {
+                "title": "Simple Computer Vision Pneumonia",
+                "contentType": "Deep_Learning_guided_project",
+                "difficultyLevel": 2,
+                "topic": "Deep Learning",
+                "libraries": [
+                    "TensorFlow"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "computer-vision-dessert-classification.md",
+            "metadataAttributes": {
+                "title": "Computer Vision Dessert Classification",
+                "contentType": "Deep_Learning_guided_project",
+                "difficultyLevel": 3,
+                "topic": "Deep Learning",
+                "libraries": [
+                    "TensorFlow"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "simple-neural-network-classification.md",
+            "metadataAttributes": {
+                "title": "Simple Neural Network Classification",
+                "contentType": "Deep_Learning_guided_project",
+                "difficultyLevel": 3,
+                "topic": "Deep Learning",
+                "libraries": [
+                    "Sklearn",
+                    "TensorFlow"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "tensorflow-titanic-classification.md",
+            "metadataAttributes": {
+                "title": "TensorFlow Titanic Classification",
+                "contentType": "Deep_Learning_guided_project",
+                "difficultyLevel": 4,
+                "topic": "Deep Learning",
+                "libraries": [
+                    "TensorFlow"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "tensorflow-rock-paper-scissors-imagedatagenerator.md",
+            "metadataAttributes": {
+                "title": "TensorFlow Rock Paper Scissors ImageDataGenerator",
+                "contentType": "Deep_Learning_guided_project",
+                "difficultyLevel": 4,
+                "topic": "Deep Learning",
+                "libraries": [
+                    "TensorFlow"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "cnn-advanced-mnist-functional-api.md",
+            "metadataAttributes": {
+                "title": "CNN Advanced MNIST Functional API",
+                "contentType": "Deep_Learning_guided_project",
+                "difficultyLevel": 5,
+                "topic": "Deep Learning",
+                "libraries": [
+                    "TensorFlow"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "not-your-grandmas-titanic-classification.md",
+            "metadataAttributes": {
+                "title": "Not Your Grandmas Titanic Classification",
+                "contentType": "Deep_Learning_guided_project",
+                "difficultyLevel": 5,
+                "topic": "Deep Learning",
+                "libraries": [
+                    "TensorFlow"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "lstm-stock-market-predict-part3.md",
+            "metadataAttributes": {
+                "title": "LSTM Stock Market Predict Part 3",
+                "contentType": "Deep_Learning_guided_project",
+                "difficultyLevel": 5,
+                "topic": "Deep Learning",
+                "libraries": [
+                    "TensorFlow"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "10-animal-prediction-train-without-gpu.md",
+            "metadataAttributes": {
+                "title": "10 Animal Prediction Train Without GPU",
+                "contentType": "Deep_Learning_guided_project",
+                "difficultyLevel": 5,
+                "topic": "Deep Learning",
+                "libraries": [
+                    "TensorFlow"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "lstm-stock-prediction-part4.md",
+            "metadataAttributes": {
+                "title": "LSTM Stock Prediction Part 4",
+                "contentType": "Deep_Learning_guided_project",
+                "difficultyLevel": 6,
+                "topic": "Deep Learning",
+                "libraries": [
+                    "TensorFlow"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "mnist-class-for-experiments.md",
+            "metadataAttributes": {
+                "title": "MNIST Class For Experiments",
+                "contentType": "Deep_Learning_guided_project",
+                "difficultyLevel": 6,
+                "topic": "Deep Learning",
+                "libraries": [
+                    "TensorFlow"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "simple-nlp-tensorflow-sarcasm-prediction.md",
+            "metadataAttributes": {
+                "title": "Simple NLP TensorFlow Sarcasm Prediction",
+                "contentType": "Deep_Learning_guided_project",
+                "difficultyLevel": 1,
+                "topic": "Deep Learning NLP",
+                "libraries": [
+                    "TensorFlow"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "simple-multiclass-nlp-poem-classification.md",
+            "metadataAttributes": {
+                "title": "Simple Multiclass NLP Poem Classification",
+                "contentType": "Deep_Learning_guided_project",
+                "difficultyLevel": 2,
+                "topic": "Deep Learning NLP",
+                "libraries": [
+                    "TensorFlow"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "indian-god-anime-name-generator.md",
+            "metadataAttributes": {
+                "title": "Indian God Anime Name Generator",
+                "contentType": "Deep_Learning_guided_project",
+                "difficultyLevel": 4,
+                "topic": "Deep Learning NLP",
+                "libraries": [
+                    "TensorFlow"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "nlp-classification-amazon-review.md",
+            "metadataAttributes": {
+                "title": "NLP Classification Amazon Review",
+                "contentType": "Deep_Learning_guided_project",
+                "difficultyLevel": 5,
+                "topic": "Deep Learning NLP",
+                "libraries": [
+                    "TensorFlow"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "simple-hugging-face-sarcasm-classification.md",
+            "metadataAttributes": {
+                "title": "Simple Hugging Face Sarcasm Classification",
+                "contentType": "Deep_Learning_guided_project",
+                "difficultyLevel": 5,
+                "topic": "Deep Learning NLP",
+                "libraries": [
+                    "Hugging Face",
+                    "TensorFlow"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "bert-financial-news-sentiment.md",
+            "metadataAttributes": {
+                "title": "BERT Financial News Sentiment",
+                "contentType": "Deep_Learning_guided_project",
+                "difficultyLevel": 6,
+                "topic": "Deep Learning NLP",
+                "libraries": [
+                    "Hugging Face",
+                    "TensorFlow"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "tip-sklearn-linear-regression.md",
+            "metadataAttributes": {
+                "title": "Sklearn Linear Regression",
+                "contentType": "ML_tip",
+                "difficultyLevel": 1,
+                "topic": "Machine Learning",
+                "libraries": [
+                    "Sklearn"
+                ],
+                "hasCode": "false"
+            }
+        },
+        {
+            "filename": "tip-sklearn-logistic-regression.md",
+            "metadataAttributes": {
+                "title": "Sklearn Logistic Regression",
+                "contentType": "ML_tip",
+                "difficultyLevel": 2,
+                "topic": "Machine Learning",
+                "libraries": [
+                    "Sklearn",
+                    "Yellowbrick"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "tip-sklearn-decision-tree.md",
+            "metadataAttributes": {
+                "title": "Sklearn Decision Tree",
+                "contentType": "ML_tip",
+                "difficultyLevel": 3,
+                "topic": "Machine Learning",
+                "libraries": [
+                    "Sklearn"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "tip-sklearn-elasticnet.md",
+            "metadataAttributes": {
+                "title": "Sklearn ElasticNet",
+                "contentType": "ML_tip",
+                "difficultyLevel": 4,
+                "topic": "Machine Learning",
+                "libraries": [
+                    "Sklearn",
+                    "Python"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "tip-sklearn-ard-regression.md",
+            "metadataAttributes": {
+                "title": "Sklearn ARD Regression",
+                "contentType": "ML_tip",
+                "difficultyLevel": 4,
+                "topic": "Machine Learning",
+                "libraries": [
+                    "Sklearn"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "tip-sklearn-kneighbors.md",
+            "metadataAttributes": {
+                "title": "Sklearn KNeighbors",
+                "contentType": "ML_tip",
+                "difficultyLevel": 5,
+                "topic": "Machine Learning",
+                "libraries": [
+                    "Sklearn",
+                    "Plotly"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "tip-sklearn-gradient-boosting.md",
+            "metadataAttributes": {
+                "title": "Sklearn Gradient Boosting",
+                "contentType": "ML_tip",
+                "difficultyLevel": 5,
+                "topic": "Machine Learning",
+                "libraries": [
+                    "Sklearn",
+                    "Python"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "tip-sklearn-random-forest.md",
+            "metadataAttributes": {
+                "title": "Sklearn Random Forest",
+                "contentType": "ML_tip",
+                "difficultyLevel": 6,
+                "topic": "Machine Learning",
+                "libraries": [
+                    "Sklearn",
+                    "Python"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "tip-sklearn-bagging-ensemble.md",
+            "metadataAttributes": {
+                "title": "Sklearn Bagging Ensemble",
+                "contentType": "ML_tip",
+                "difficultyLevel": 6,
+                "topic": "Machine Learning",
+                "libraries": [
+                    "Sklearn"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "tip-sklearn-extra-trees.md",
+            "metadataAttributes": {
+                "title": "Sklearn Extra Trees",
+                "contentType": "ML_tip",
+                "difficultyLevel": 6,
+                "topic": "Machine Learning",
+                "libraries": [
+                    "Sklearn"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "tip-xgboost-extreme-gradient-boosting.md",
+            "metadataAttributes": {
+                "title": "XGBoost Extreme Gradient Boosting",
+                "contentType": "ML_tip",
+                "difficultyLevel": 6,
+                "topic": "Machine Learning",
+                "libraries": [
+                    "XGBoost",
+                    "Sklearn"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "tip-tensorflow-random-forest.md",
+            "metadataAttributes": {
+                "title": "TensorFlow Random Forest",
+                "contentType": "ML_tip",
+                "difficultyLevel": 6,
+                "topic": "Machine Learning",
+                "libraries": [
+                    "TensorFlow",
+                    "Sklearn"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "tip-lightgbm-light-gradient-boosting.md",
+            "metadataAttributes": {
+                "title": "LightGBM Light Gradient Boosting",
+                "contentType": "ML_tip",
+                "difficultyLevel": 6,
+                "topic": "Machine Learning",
+                "libraries": [
+                    "LightGBM"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "tip-sklearn-best-ensemble-method.md",
+            "metadataAttributes": {
+                "title": "Sklearn Best Ensemble Method",
+                "contentType": "ML_tip",
+                "difficultyLevel": 6,
+                "topic": "Machine Learning",
+                "libraries": [
+                    "Sklearn"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "tip-yellowbrick-discrimination-threshold.md",
+            "metadataAttributes": {
+                "title": "Yellowbrick Discrimination Threshold",
+                "contentType": "ML_tip",
+                "difficultyLevel": 4,
+                "topic": "Machine Learning",
+                "libraries": [
+                    "Yellowbrick",
+                    "Sklearn"
+                ],
+                "hasCode": "false"
+            }
+        },
+        {
+            "filename": "tip-shap-feature-importances.md",
+            "metadataAttributes": {
+                "title": "SHAP Feature Importances",
+                "contentType": "ML_tip",
+                "difficultyLevel": 5,
+                "topic": "Machine Learning",
+                "libraries": [
+                    "Shap",
+                    "Sklearn"
+                ],
+                "hasCode": "false"
+            }
+        },
+        {
+            "filename": "tip-shap-kernel-explainer.md",
+            "metadataAttributes": {
+                "title": "SHAP Kernel Explainer",
+                "contentType": "ML_tip",
+                "difficultyLevel": 6,
+                "topic": "Machine Learning",
+                "libraries": [
+                    "Shap",
+                    "Sklearn"
+                ],
+                "hasCode": "false"
+            }
+        },
+        {
+            "filename": "tip-shap-summary-plot.md",
+            "metadataAttributes": {
+                "title": "SHAP Summary Plot",
+                "contentType": "ML_tip",
+                "difficultyLevel": 5,
+                "topic": "Machine Learning",
+                "libraries": [
+                    "Shap"
+                ],
+                "hasCode": "false"
+            }
+        },
+        {
+            "filename": "tip-seaborn-pandas-for-loop-distributions.md",
+            "metadataAttributes": {
+                "title": "Seaborn Pandas For Loop Distributions",
+                "contentType": "data_analysis_tip",
+                "difficultyLevel": 3,
+                "topic": "Data Visualization",
+                "libraries": [
+                    "Pandas",
+                    "Seaborn"
+                ],
+                "hasCode": "false"
+            }
+        },
+        {
+            "filename": "tip-sweetviz-pairwise-correlation.md",
+            "metadataAttributes": {
+                "title": "Sweetviz Pairwise Correlation",
+                "contentType": "data_analysis_tip",
+                "difficultyLevel": 2,
+                "topic": "Data Analysis",
+                "libraries": [
+                    "Sweetviz",
+                    "Pandas"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "tip-seaborn-histplot.md",
+            "metadataAttributes": {
+                "title": "Seaborn Histplot",
+                "contentType": "data_analysis_tip",
+                "difficultyLevel": 1,
+                "topic": "Data Visualization",
+                "libraries": [
+                    "Seaborn"
+                ],
+                "hasCode": "false"
+            }
+        },
+        {
+            "filename": "tip-seaborn-kdeplot.md",
+            "metadataAttributes": {
+                "title": "Seaborn KDEPlot",
+                "contentType": "data_analysis_tip",
+                "difficultyLevel": 2,
+                "topic": "Data Visualization",
+                "libraries": [
+                    "Seaborn"
+                ],
+                "hasCode": "false"
+            }
+        },
+        {
+            "filename": "tip-seaborn-conditional-kde.md",
+            "metadataAttributes": {
+                "title": "Seaborn Conditional KDE",
+                "contentType": "data_analysis_tip",
+                "difficultyLevel": 3,
+                "topic": "Data Visualization",
+                "libraries": [
+                    "Seaborn"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "tip-seaborn-boxplot.md",
+            "metadataAttributes": {
+                "title": "Seaborn Boxplot",
+                "contentType": "data_analysis_tip",
+                "difficultyLevel": 1,
+                "topic": "Data Visualization",
+                "libraries": [
+                    "Seaborn"
+                ],
+                "hasCode": "false"
+            }
+        },
+        {
+            "filename": "tip-seaborn-boxenplot.md",
+            "metadataAttributes": {
+                "title": "Seaborn Boxenplot",
+                "contentType": "data_analysis_tip",
+                "difficultyLevel": 2,
+                "topic": "Data Visualization",
+                "libraries": [
+                    "Seaborn",
+                    "Python"
+                ],
+                "hasCode": "false"
+            }
+        },
+        {
+            "filename": "tip-seaborn-countplot.md",
+            "metadataAttributes": {
+                "title": "Seaborn Countplot",
+                "contentType": "data_analysis_tip",
+                "difficultyLevel": 1,
+                "topic": "Data Visualization",
+                "libraries": [
+                    "Seaborn"
+                ],
+                "hasCode": "false"
+            }
+        },
+        {
+            "filename": "tip-seaborn-catplot.md",
+            "metadataAttributes": {
+                "title": "Seaborn Catplot",
+                "contentType": "data_analysis_tip",
+                "difficultyLevel": 2,
+                "topic": "Data Visualization",
+                "libraries": [
+                    "Seaborn"
+                ],
+                "hasCode": "false"
+            }
+        },
+        {
+            "filename": "tip-seaborn-strippointplot.md",
+            "metadataAttributes": {
+                "title": "Seaborn Stripplot and Pointplot",
+                "contentType": "data_analysis_tip",
+                "difficultyLevel": 3,
+                "topic": "Data Visualization",
+                "libraries": [
+                    "Seaborn"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "tip-seaborn-anomaly-detection-plot.md",
+            "metadataAttributes": {
+                "title": "Seaborn Anomaly Detection Plot",
+                "contentType": "data_analysis_tip",
+                "difficultyLevel": 4,
+                "topic": "Data Visualization",
+                "libraries": [
+                    "Seaborn",
+                    "Matplotlib",
+                    "Pandas"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "tip-seaborn-diverging-palette.md",
+            "metadataAttributes": {
+                "title": "Seaborn Diverging Palette",
+                "contentType": "data_analysis_tip",
+                "difficultyLevel": 1,
+                "topic": "Data Visualization",
+                "libraries": [
+                    "Seaborn"
+                ],
+                "hasCode": "false"
+            }
+        },
+        {
+            "filename": "tip-seaborn-figure-level-vs-axes-level.md",
+            "metadataAttributes": {
+                "title": "Seaborn Figure Level vs Axes Level",
+                "contentType": "data_analysis_tip",
+                "difficultyLevel": 3,
+                "topic": "Data Visualization",
+                "libraries": [
+                    "Seaborn"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "tip-pandas-plot-left-right-axis.md",
+            "metadataAttributes": {
+                "title": "Pandas Plot Left Right Axis",
+                "contentType": "data_analysis_tip",
+                "difficultyLevel": 3,
+                "topic": "Data Analysis",
+                "libraries": [
+                    "Pandas"
+                ],
+                "hasCode": "false"
+            }
+        },
+        {
+            "filename": "tip-pandas-area-plot.md",
+            "metadataAttributes": {
+                "title": "Pandas Area Plot",
+                "contentType": "data_analysis_tip",
+                "difficultyLevel": 3,
+                "topic": "Data Visualization",
+                "libraries": [
+                    "Pandas"
+                ],
+                "hasCode": "false"
+            }
+        },
+        {
+            "filename": "tip-seaborn-barplot-outline-patches.md",
+            "metadataAttributes": {
+                "title": "Seaborn Barplot Outline Patches",
+                "contentType": "data_analysis_tip",
+                "difficultyLevel": 3,
+                "topic": "Data Visualization",
+                "libraries": [
+                    "Seaborn",
+                    "Pandas"
+                ],
+                "hasCode": "false"
+            }
+        },
+        {
+            "filename": "tip-seaborn-swarmplot.md",
+            "metadataAttributes": {
+                "title": "Seaborn Swarmplot",
+                "contentType": "data_analysis_tip",
+                "difficultyLevel": 1,
+                "topic": "Data Visualization",
+                "libraries": [
+                    "Seaborn"
+                ],
+                "hasCode": "false"
+            }
+        },
+        {
+            "filename": "tip-seaborn-lineplot.md",
+            "metadataAttributes": {
+                "title": "Seaborn Lineplot",
+                "contentType": "data_analysis_tip",
+                "difficultyLevel": 2,
+                "topic": "Data Visualization",
+                "libraries": [
+                    "Seaborn"
+                ],
+                "hasCode": "false"
+            }
+        },
+        {
+            "filename": "tip-seaborn-jointplot.md",
+            "metadataAttributes": {
+                "title": "Seaborn Jointplot",
+                "contentType": "data_analysis_tip",
+                "difficultyLevel": 3,
+                "topic": "Data Visualization",
+                "libraries": [
+                    "Seaborn"
+                ],
+                "hasCode": "false"
+            }
+        },
+        {
+            "filename": "tip-seaborn-pairgrid.md",
+            "metadataAttributes": {
+                "title": "Seaborn PairGrid",
+                "contentType": "data_analysis_tip",
+                "difficultyLevel": 3,
+                "topic": "Data Visualization",
+                "libraries": [
+                    "Seaborn"
+                ],
+                "hasCode": "false"
+            }
+        },
+        {
+            "filename": "tip-seaborn-heatmap.md",
+            "metadataAttributes": {
+                "title": "Seaborn Heatmap",
+                "contentType": "data_analysis_tip",
+                "difficultyLevel": 2,
+                "topic": "Data Visualization",
+                "libraries": [
+                    "Seaborn"
+                ],
+                "hasCode": "false"
+            }
+        },
+        {
+            "filename": "tip-seaborn-ridgeplot.md",
+            "metadataAttributes": {
+                "title": "Seaborn Ridgeplot",
+                "contentType": "data_analysis_tip",
+                "difficultyLevel": 4,
+                "topic": "Data Visualization",
+                "libraries": [
+                    "Seaborn"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "tip-seaborn-lmplot.md",
+            "metadataAttributes": {
+                "title": "Seaborn Lmplot",
+                "contentType": "data_analysis_tip",
+                "difficultyLevel": 2,
+                "topic": "Data Visualization",
+                "libraries": [
+                    "Seaborn"
+                ],
+                "hasCode": "false"
+            }
+        },
+        {
+            "filename": "tip-seaborn-violinplot.md",
+            "metadataAttributes": {
+                "title": "Seaborn Violinplot",
+                "contentType": "data_analysis_tip",
+                "difficultyLevel": 2,
+                "topic": "Data Visualization",
+                "libraries": [
+                    "Seaborn"
+                ],
+                "hasCode": "false"
+            }
+        },
+        {
+            "filename": "tip-tensorflow-to-categorical.md",
+            "metadataAttributes": {
+                "title": "TensorFlow To Categorical",
+                "contentType": "Deep_Learning_tip",
+                "difficultyLevel": 2,
+                "topic": "Deep Learning",
+                "libraries": [
+                    "TensorFlow",
+                    "Pandas",
+                    "Sklearn"
+                ],
+                "hasCode": "false"
+            }
+        },
+        {
+            "filename": "tip-tensorflow-categorical-crossentropy.md",
+            "metadataAttributes": {
+                "title": "TensorFlow Categorical Crossentropy",
+                "contentType": "Deep_Learning_tip",
+                "difficultyLevel": 3,
+                "topic": "Deep Learning",
+                "libraries": [
+                    "TensorFlow"
+                ],
+                "hasCode": "false"
+            }
+        },
+        {
+            "filename": "tip-tensorflow-sequential-perceptron.md",
+            "metadataAttributes": {
+                "title": "TensorFlow Sequential Perceptron",
+                "contentType": "Deep_Learning_tip",
+                "difficultyLevel": 1,
+                "topic": "Deep Learning",
+                "libraries": [
+                    "TensorFlow"
+                ],
+                "hasCode": "false"
+            }
+        },
+        {
+            "filename": "tip-tensorflow-sequential-feed-forward.md",
+            "metadataAttributes": {
+                "title": "TensorFlow Sequential Feed Forward",
+                "contentType": "Deep_Learning_tip",
+                "difficultyLevel": 3,
+                "topic": "Deep Learning",
+                "libraries": [
+                    "TensorFlow"
+                ],
+                "hasCode": "false"
+            }
+        },
+        {
+            "filename": "tip-tensorflow-sequential-deep-forward.md",
+            "metadataAttributes": {
+                "title": "TensorFlow Sequential Deep Forward",
+                "contentType": "Deep_Learning_tip",
+                "difficultyLevel": 4,
+                "topic": "Deep Learning",
+                "libraries": [
+                    "TensorFlow"
+                ],
+                "hasCode": "false"
+            }
+        },
+        {
+            "filename": "tip-tensorflow-sequential-rnn.md",
+            "metadataAttributes": {
+                "title": "TensorFlow Sequential RNN",
+                "contentType": "Deep_Learning_tip",
+                "difficultyLevel": 5,
+                "topic": "Deep Learning",
+                "libraries": [
+                    "TensorFlow"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "tip-tensorflow-sequential-cnn.md",
+            "metadataAttributes": {
+                "title": "TensorFlow Sequential CNN",
+                "contentType": "Deep_Learning_tip",
+                "difficultyLevel": 5,
+                "topic": "Deep Learning",
+                "libraries": [
+                    "TensorFlow"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "tip-tensorflow-functional-cnn.md",
+            "metadataAttributes": {
+                "title": "TensorFlow Functional CNN",
+                "contentType": "Deep_Learning_tip",
+                "difficultyLevel": 4,
+                "topic": "Deep Learning",
+                "libraries": [
+                    "TensorFlow"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "tip-tensorflow-functional-perceptron.md",
+            "metadataAttributes": {
+                "title": "TensorFlow Functional Perceptron",
+                "contentType": "Deep_Learning_tip",
+                "difficultyLevel": 1,
+                "topic": "Deep Learning",
+                "libraries": [
+                    "TensorFlow"
+                ],
+                "hasCode": "false"
+            }
+        },
+        {
+            "filename": "tip-tensorflow-functional-feed-forward.md",
+            "metadataAttributes": {
+                "title": "TensorFlow Functional Feed Forward",
+                "contentType": "Deep_Learning_tip",
+                "difficultyLevel": 3,
+                "topic": "Deep Learning",
+                "libraries": [
+                    "TensorFlow"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "tip-huggingface-fine-tuning-nlp.md",
+            "metadataAttributes": {
+                "title": "Hugging Face Fine Tuning NLP",
+                "contentType": "Deep_Learning_tip",
+                "difficultyLevel": 5,
+                "topic": "Deep Learning NLP",
+                "libraries": [
+                    "Hugging Face",
+                    "Python"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "tip-huggingface-nlp-pipelines.md",
+            "metadataAttributes": {
+                "title": "Hugging Face NLP Pipelines",
+                "contentType": "Deep_Learning_tip",
+                "difficultyLevel": 3,
+                "topic": "Deep Learning NLP",
+                "libraries": [
+                    "Hugging Face",
+                    "Python"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "tip-huggingface-nlp-datasets.md",
+            "metadataAttributes": {
+                "title": "Hugging Face NLP Datasets",
+                "contentType": "Deep_Learning_tip",
+                "difficultyLevel": 3,
+                "topic": "Deep Learning NLP",
+                "libraries": [
+                    "Hugging Face",
+                    "Python"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "tip-huggingface-tokenizer-fast.md",
+            "metadataAttributes": {
+                "title": "Hugging Face Tokenizer Fast",
+                "contentType": "Deep_Learning_tip",
+                "difficultyLevel": 4,
+                "topic": "Deep Learning NLP",
+                "libraries": [
+                    "Hugging Face"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "tip-huggingface-sequence-classification-tf.md",
+            "metadataAttributes": {
+                "title": "Hugging Face Sequence Classification TF",
+                "contentType": "Deep_Learning_tip",
+                "difficultyLevel": 6,
+                "topic": "Deep Learning NLP",
+                "libraries": [
+                    "Hugging Face",
+                    "TensorFlow"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "tip-seaborn-for-loop-distributions.md",
+            "metadataAttributes": {
+                "title": "Seaborn For Loop Distributions",
+                "contentType": "data_analysis_tip",
+                "difficultyLevel": 2,
+                "topic": "Data Analysis",
+                "libraries": [
+                    "Seaborn"
+                ],
+                "hasCode": "false"
+            }
+        },
+        {
+            "filename": "tip-seaborn-detailed-distribution-plot.md",
+            "metadataAttributes": {
+                "title": "Seaborn Detailed Distribution Plot",
+                "contentType": "data_analysis_tip",
+                "difficultyLevel": 3,
+                "topic": "Data Visualization",
+                "libraries": [
+                    "Seaborn",
+                    "Pandas"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "tip-seaborn-custom-classes-defaults.md",
+            "metadataAttributes": {
+                "title": "Seaborn Custom Classes Defaults",
+                "contentType": "data_analysis_tip",
+                "difficultyLevel": 4,
+                "topic": "Data Visualization",
+                "libraries": [
+                    "Seaborn",
+                    "Python"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "tip-seaborn-facetgrid.md",
+            "metadataAttributes": {
+                "title": "Seaborn FacetGrid",
+                "contentType": "data_analysis_tip",
+                "difficultyLevel": 3,
+                "topic": "Data Visualization",
+                "libraries": [
+                    "Seaborn"
+                ],
+                "hasCode": "false"
+            }
+        },
+        {
+            "filename": "tip-seaborn-choose-diverging-palette.md",
+            "metadataAttributes": {
+                "title": "Seaborn Choose Diverging Palette",
+                "contentType": "data_analysis_tip",
+                "difficultyLevel": 2,
+                "topic": "Data Visualization",
+                "libraries": [
+                    "Seaborn"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "tip-seaborn-set-style-customize.md",
+            "metadataAttributes": {
+                "title": "Seaborn Set Style Customize",
+                "contentType": "data_analysis_tip",
+                "difficultyLevel": 2,
+                "topic": "Data Visualization",
+                "libraries": [
+                    "Seaborn"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "tip-pandas-interactive-barplot.md",
+            "metadataAttributes": {
+                "title": "Pandas Interactive Barplot",
+                "contentType": "data_analysis_tip",
+                "difficultyLevel": 2,
+                "topic": "Data Visualization",
+                "libraries": [
+                    "Pandas",
+                    "Plotly"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "tip-pandas-plotly-interactive-histogram.md",
+            "metadataAttributes": {
+                "title": "Pandas Plotly Interactive Histogram",
+                "contentType": "data_analysis_tip",
+                "difficultyLevel": 3,
+                "topic": "Data Visualization",
+                "libraries": [
+                    "Pandas",
+                    "Plotly"
+                ],
+                "hasCode": "true"
+            }
+        },
+        {
+            "filename": "tip-pandas-pie-plot.md",
+            "metadataAttributes": {
+                "title": "Pandas Pie Plot",
+                "contentType": "data_analysis_tip",
+                "difficultyLevel": 1,
+                "topic": "Data Visualization",
+                "libraries": [
+                    "Pandas"
+                ],
+                "hasCode": "false"
+            }
+        },
+        {
+            "filename": "tip-pandas-many-histograms-for-loop.md",
+            "metadataAttributes": {
+                "title": "Pandas Many Histograms For Loop",
+                "contentType": "data_analysis_tip",
+                "difficultyLevel": 2,
+                "topic": "Data Visualization",
+                "libraries": [
+                    "Pandas",
+                    "Matplotlib"
+                ],
+                "hasCode": "false"
+            }
+        },
+        {
+            "filename": "tip-plotly-histogram.md",
+            "metadataAttributes": {
+                "title": "Plotly Histogram",
+                "contentType": "data_analysis_tip",
+                "difficultyLevel": 1,
+                "topic": "Data Visualization",
+                "libraries": [
+                    "Plotly"
+                ],
+                "hasCode": "false"
+            }
+        },
+        {
+            "filename": "tip-plotly-3d-scatter-plot.md",
+            "metadataAttributes": {
+                "title": "Plotly 3D Scatter Plot",
+                "contentType": "data_analysis_tip",
+                "difficultyLevel": 4,
+                "topic": "Data Visualization",
+                "libraries": [
+                    "Plotly"
+                ],
+                "hasCode": "false"
+            }
+        }
+    ]
+}
