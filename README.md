@@ -27,7 +27,7 @@ Deep Learning: TensorFlow (Sequential & Functional APIs), Recurrent Neural Netwo
 
 Natural Language Processing (NLP): TensorFlow Text Generation, Hugging Face Transformers, and NLP Pipelines.
 
-**[Try the Live Chatbot Here: DataSimple.education](https://www.datasimple.education/ai-tutor-brandyn)**
+**[Try the Live Chatbot Here: DataSimple.education](https://shr.pn/fFpw)**
 
 ## User Interface
 
