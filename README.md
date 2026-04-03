@@ -16,7 +16,7 @@ This project utilizes a decoupled, serverless AWS architecture to manage cost, l
 * **The Feedback Loop (Persistent Storage):** User ratings and interactions are routed through a dedicated **AWS Lambda (Feedback processing)** function, which cleans and writes the payload to an **Amazon DynamoDB** (`feedbacks` table) for continuous model evaluation and curriculum improvement.
 
 
-##The Content Catalog
+## The Content Catalog
 This repository manages the metadata for nearly 100 Guided Projects and Data Tips from the DataSimple curriculum, ensuring the AI can precisely filter and recommend content across:
 
 Data Analysis & Visualization: Pandas, Seaborn, Plotly, Sweetviz.
@@ -27,7 +27,14 @@ Deep Learning: TensorFlow (Sequential & Functional APIs), Recurrent Neural Netwo
 
 Natural Language Processing (NLP): TensorFlow Text Generation, Hugging Face Transformers, and NLP Pipelines.
 
-##How to Use This Repository
+**[Try the Live Chatbot Here: DataSimple.education](https://www.datasimple.education/ai-tutor-brandyn)**
+
+## User Interface
+
+![DataSimple Chatbot Interface](docs/Ai-Teacher-Brandyn.jpg)
+
+
+## How to Use This Repository
 AWS Bedrock Knowledge Bases require a "sidecar" .metadata.json file for every single document to allow Pinecone to perform metadata filtering (e.g., filtering out Level 6 projects when a beginner asks a question). Instead of managing hundreds of individual JSON files manually, this pipeline manages a single master_metadata.json file and automates the extraction.
 
 ### Step 1: Update the Master JSON
