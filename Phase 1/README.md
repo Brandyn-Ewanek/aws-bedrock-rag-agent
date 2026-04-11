@@ -1,11 +1,13 @@
 # DataSimple.education Serverless GenAI Agent & Data Pipeline
 This repository contains the architecture, data preparation, and metadata strategy for the DataSimple.education RAG (Retrieval-Augmented Generation) Chatbot. Built on AWS, this system integrates a static educational knowledge base with a dynamic web-search agent and a persistent user feedback loop.
 
+
+
 ## Architecture Overview
 
-![DataSimple AI Architecture Diagram](Phase%202/docs/Architecture-DataSimple-Chatbot.png)
+![DataSimple AI Architecture Diagram](docs/DataSimple-Chatbot-Architecture-Diagram.png)
 
-**[Click here to read the full Project & Architecture Report (PDF)](Phase%202/docs/DataSimple-Chatbot-Project-Report-Phase%202.pdf)**
+**[Click here to read the full Project & Architecture Report (PDF)](docs/DataSimple-Chatbot-Project-Report.pdf)**
 
 This project utilizes a decoupled, serverless AWS architecture to manage cost, latency, and data freshness. 
 
@@ -29,7 +31,7 @@ Natural Language Processing (NLP): TensorFlow Text Generation, Hugging Face Tran
 
 ## User Interface
 
-![DataSimple Chatbot Interface](Phase%201/docs/Ai-Teacher-Brandyn.jpg)
+![DataSimple Chatbot Interface](docs/Ai-Teacher-Brandyn.jpg)
 
 
 ## How to Use This Repository
@@ -52,7 +54,7 @@ hasVideo: "true" or "false" (Allows the LLM to know if a video exists)
 
 videoUrl: "https://youtube.com/..." (Allows the LLM to provide the student with a direct link)
 
-### Step 2: Generate the Sidecar Files
+###Step 2: Generate the Sidecar Files
 Run the Python automation script to unpack the master JSON into the individual files Bedrock expects.
 
 Bash
@@ -65,12 +67,3 @@ Upload your clean .md markdown files to your S3 bucket.
 Upload the newly generated .metadata.json files alongside them.
 
 Click "Sync" in your AWS Bedrock Knowledge Base Console to trigger the Amazon Titan embedding process and update the Pinecone vector database.
-
-## Key Learnings & Insights from Phase 2
-Phase 2 focused on evolving the architecture into a **Closed-Loop Multi-Agent System** capable of administering dynamic practice tests and generating customized study plans. Key insights include:
-
-* **Overcoming the AWS API Gateway Timeout:** AWS API Gateway has a strict, unchangeable 29.0-second timeout limit. Complex multi-agent loops (e.g., Test Agent grades -> Supervisor intercepts -> Learn Agent searches DB) exceeded this limit. The solution was decoupling tasks and utilizing faster "engine swaps" (shifting from Claude 4.5 Sonnet to Claude 4.5 Haiku for simple grading tasks).
-* **Leveraging AWS Bedrock Prompt Caching:** By severing the Test Agent's connection to the vector database and embedding a massive 21-question "Question Bank" directly into the system prompt (>1,024 tokens), we triggered AWS's automatic prompt caching. This reduced inference times to 3-5 seconds and slashed token costs, successfully bypassing the API Gateway limit.
-* **Zero-Hallucination Curriculum Routing (The "Cheat Code"):** To guarantee the AI never recommends fake or external courses (like Kaggle), specific curriculum string tags (e.g., `-- [TITLE] --`) were hardcoded directly into the explanations within the prompt's Question Bank. The LLM simply reads its own scratchpad history to serve perfect, hallucination-free project recommendations at the end of a test.
-* **Invisible State Tracking via XML:** LLMs struggle to count turns in a conversation. By forcing the agent to use a hidden `<thinking>` XML scratchpad before generating a response, the agent accurately tracks test state (e.g., "Question 2 of 3") without exposing the internal logic to the end-user UI.
-* **Alias vs. Version Management:** To maintain a clean architecture and avoid updating Lambda code for every prompt change, updates were deployed by minting new Bedrock "Versions" and updating the *existing* "Production Alias," rather than creating a chain reaction of new aliases.
