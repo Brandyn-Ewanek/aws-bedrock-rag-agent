@@ -1,0 +1,197 @@
+[
+    {
+        "scenario": "1. Standard Completion & Math Check",
+        "user_messages": [
+            "I would like to take a practice test.",
+            "B",
+            "C",
+            "A"
+        ],
+        "evaluation_criteria": "Verify the agent asked exactly 3 questions (Data Analysis -> ML -> Deep Learning). Verify the final score perfectly matches the agent's own Correct/Incorrect grading. Verify it summarized 3 projects using exact -- [TITLE] -- formatting."
+    },
+    {
+        "scenario": "2. The Asterisk and Line Format Check",
+        "user_messages": [
+            "Start a practice quiz.",
+            "A",
+            "B",
+            "D"
+        ],
+        "evaluation_criteria": "CRITICAL: The agent MUST NOT use any markdown asterisks (* or **) anywhere in its output. It MUST use a dividing line (---) between grading and asking the next question."
+    },
+    {
+        "scenario": "3. The Silent Scratchpad Check",
+        "user_messages": [
+            "Test me",
+            "C",
+            "B",
+            "A"
+        ],
+        "evaluation_criteria": "Verify the raw output contains a <thinking> XML tag tracking the state of the test. Verify it recommends ONLY DataSimple projects, with absolutely no mention of Kaggle or external sites."
+    },
+    {
+        "scenario": "4. Lowercase Inputs",
+        "user_messages": [
+            "I need a test",
+            "b",
+            "c",
+            "d"
+        ],
+        "evaluation_criteria": "Verify the agent correctly parsed the lowercase letters as valid answers, graded them, and progressed the test normally."
+    },
+    {
+        "scenario": "5. Verbose Inputs",
+        "user_messages": [
+            "Test please",
+            "I think the answer is definitely C.",
+            "I'll guess A.",
+            "Let's go with D."
+        ],
+        "evaluation_criteria": "Verify the agent successfully extracted the intended letter from the conversational text, graded it, and progressed the test."
+    },
+    {
+        "scenario": "6. Hesitant Inputs",
+        "user_messages": [
+            "Start test",
+            "Is it B?",
+            "Maybe C?",
+            "A?"
+        ],
+        "evaluation_criteria": "Verify the agent accepted the question marks as final submissions, graded them, and progressed the test."
+    },
+    {
+        "scenario": "7. Invalid Letter Handling",
+        "user_messages": [
+            "Start test",
+            "E",
+            "Z",
+            "A"
+        ],
+        "evaluation_criteria": "When the user typed 'E' and 'Z', the agent MUST NOT advance the test or grade it. It must politely ask the user to provide A, B, C, or D. Only after 'A' should it grade and move to Question 2."
+    },
+    {
+        "scenario": "8. Double Selection",
+        "user_messages": [
+            "Test",
+            "A or B",
+            "C",
+            "D"
+        ],
+        "evaluation_criteria": "When the user typed 'A or B', the agent must refuse to grade and force the user to pick a single definitive answer before moving on."
+    },
+    {
+        "scenario": "9. The Skip Attempt",
+        "user_messages": [
+            "Start test",
+            "I don't know, skip this one",
+            "B",
+            "A"
+        ],
+        "evaluation_criteria": "Verify the agent gracefully handled the skip request, marked Q1 as incorrect, provided the correct explanation, and moved directly to Q2."
+    },
+    {
+        "scenario": "10. The Premature Exit",
+        "user_messages": [
+            "Start test",
+            "Actually, stop the test, I have to go."
+        ],
+        "evaluation_criteria": "Verify the agent gracefully exited the test loop, confirmed the cancellation, and maintained a warm, encouraging persona."
+    },
+    {
+        "scenario": "11. The Mid-Test Question",
+        "user_messages": [
+            "Start test",
+            "Wait, what does variance mean?",
+            "A",
+            "B"
+        ],
+        "evaluation_criteria": "The agent must briefly explain variance, but strictly maintain the test state and prompt the user to answer Question 1."
+    },
+    {
+        "scenario": "12. The Specific Topic Request",
+        "user_messages": [
+            "Give me a practice test on Deep Learning only."
+        ],
+        "evaluation_criteria": "The agent must politely enforce its instructions by explaining the test covers all three areas, and then start with Question 1 (Data Analysis)."
+    },
+    {
+        "scenario": "13. The Answer Beggar",
+        "user_messages": [
+            "Start test",
+            "Can you just tell me the answer to this one?"
+        ],
+        "evaluation_criteria": "The agent must refuse to give the answer outright, maintain the teacher persona, and encourage the student to guess."
+    },
+    {
+        "scenario": "14. Full Text Answer",
+        "user_messages": [
+            "Start test",
+            "Removes rows or columns that contain missing (null) values",
+            "A",
+            "B"
+        ],
+        "evaluation_criteria": "Verify the agent recognized the user typing the actual text of an option instead of a letter, and graded it accurately."
+    },
+    {
+        "scenario": "15. Number instead of Letter",
+        "user_messages": [
+            "Start test",
+            "1",
+            "2",
+            "3"
+        ],
+        "evaluation_criteria": "Verify the agent asks the user to clarify using letters A, B, C, or D instead of grading."
+    },
+    {
+        "scenario": "16. Aggressive/Frustrated Input",
+        "user_messages": [
+            "Start test",
+            "This is too hard, I hate this",
+            "A",
+            "B"
+        ],
+        "evaluation_criteria": "Verify the agent responds with extreme empathy and warmth, acting as a supportive teacher, while gently encouraging them to try answering."
+    },
+    {
+        "scenario": "17. Gibberish Input",
+        "user_messages": [
+            "Start test",
+            "asdfghjkl",
+            "A",
+            "B"
+        ],
+        "evaluation_criteria": "Verify the agent handles the unrecognized input by re-prompting the user for a valid A, B, C, or D answer."
+    },
+    {
+        "scenario": "18. Correcting Themselves",
+        "user_messages": [
+            "Start test",
+            "A... wait no, B!",
+            "C",
+            "D"
+        ],
+        "evaluation_criteria": "Verify the agent correctly registers the user's final decision ('B') and grades that option."
+    },
+    {
+        "scenario": "19. The Slow Roller (Greetings first)",
+        "user_messages": [
+            "Hello Teacher Brandyn",
+            "I am ready for a test",
+            "A",
+            "B",
+            "C"
+        ],
+        "evaluation_criteria": "Verify the agent handles the polite greeting naturally before initiating Question 1, keeping a consistent test count."
+    },
+    {
+        "scenario": "20. The Ultimate Stress Test",
+        "user_messages": [
+            "Test me",
+            "Skip",
+            "Is it Z?",
+            "B",
+            "A"
+        ],
+        "evaluation_criteria": "Verify the agent tracks the state perfectly through a skip, an invalid letter, and valid completions, outputting a correct final score out of 3."
+    }
+]

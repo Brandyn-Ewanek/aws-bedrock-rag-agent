@@ -3,9 +3,11 @@ This repository contains the architecture, data preparation, and metadata strate
 
 ## Architecture Overview
 
-![DataSimple AI Architecture Diagram](Phase%202/docs/Architecture-DataSimple-Chatbot.png)
+![DataSimple AI Architecture Diagram](Phase%202/docs/Architecture-DataSimple-Chatbot.jpg)
 
 **[Click here to read the full Project & Architecture Report (PDF)](Phase%202/docs/DataSimple-Chatbot-Project-Report-Phase%202.pdf)**
+
+**[Click here to read the full Project & Architecture Report (PDF)](Phase%202/docs/DataSimple-Chatbot-Project-Report-Phase-2-Testing.pdf)**
 
 This project utilizes a decoupled, serverless AWS architecture to manage cost, latency, and data freshness. 
 
@@ -14,16 +16,29 @@ This project utilizes a decoupled, serverless AWS architecture to manage cost, l
 * **The Feedback Loop (Persistent Storage):** User ratings and interactions are routed through a dedicated **AWS Lambda (Feedback processing)** function, which cleans and writes the payload to an **Amazon DynamoDB** (`feedbacks` table) for continuous model evaluation and curriculum improvement.
 
 
+## Key Learnings & Insights from Phase 2: Multi-Agent LLMOps
+Phase 2 focused on optimizing the underlying LLM architecture to build a sustainable, high-velocity ecosystem capable of delivering real-time tutoring at scale. Over the course of nine rigorous experiments, the engineering team benchmarked proprietary and open-source models across strict grading and RAG workflows.
+
+### The Final Architecture: A Hybrid-Model Ecosystem
+The evaluation proved that a "one-size-fits-all" model approach is highly inefficient. The finalized architecture implements a decoupled, specialized hybrid stack:
+* **Routing Agent (Amazon Nova Lite):** Deployed for ultra-low-latency intent classification and raw pass-through routing, eliminating API gateway bottlenecks.
+* **Learn Agent / RAG Tutor (Claude 3 Haiku):** Replaces Claude 3.5 Sonnet for database retrieval. It natively supports AWS Bedrock Tool Use and maintains high conversational fluency while dropping costs to just $0.0026 per query.
+* **Test Agent / Grader (Meta Llama 3 8B):** Deployed as a high-context, open-source grader. It securely tracks test state and calculates scores while driving grading inference costs to near zero ($0.0000 API cost; ~$0.0042 on-demand compute).
+
+### Business Impact & ROI
+By strategically assigning models based on workflow complexity, the new architecture delivers phenomenal operational improvements:
+* **60% Latency Reduction:** Average system response times have been slashed from 15–19 seconds down to 6–7 seconds, ensuring a fluid, frictionless user experience.
+* **90%+ Cost Reduction:** Operational costs have been driven down from pennies-per-query ($0.05 - $0.11) to fractions of a penny.
+* **Strategic Trade-off:** The system absorbs a fractional penalty (~0.10 to 0.40 out of 5.00) in strict formatting adherence. The agents now act as fast, supportive tutors rather than draconian examiners—an overwhelmingly positive trade-off for a free, self-paced learning environment.
+
+
 ## The Content Catalog
 This repository manages the metadata for nearly 100 Guided Projects and Data Tips from the DataSimple curriculum, ensuring the AI can precisely filter and recommend content across:
 
-Data Analysis & Visualization: Pandas, Seaborn, Plotly, Sweetviz.
-
-Machine Learning: Sklearn (Regression, Classification, Clustering), Ensemble Methods (XGBoost, LightGBM), and Explainability (SHAP, Yellowbrick).
-
-Deep Learning: TensorFlow (Sequential & Functional APIs), Recurrent Neural Networks (RNN/LSTM), and Computer Vision (CNNs).
-
-Natural Language Processing (NLP): TensorFlow Text Generation, Hugging Face Transformers, and NLP Pipelines.
+* **Data Analysis & Visualization:** Pandas, Seaborn, Plotly, Sweetviz.
+* **Machine Learning:** Sklearn (Regression, Classification, Clustering), Ensemble Methods (XGBoost, LightGBM), and Explainability (SHAP, Yellowbrick).
+* **Deep Learning:** TensorFlow (Sequential & Functional APIs), Recurrent Neural Networks (RNN/LSTM), and Computer Vision (CNNs).
+* **Natural Language Processing (NLP):** TensorFlow Text Generation, Hugging Face Transformers, and NLP Pipelines.
 
 **[Try the Live Chatbot Here: DataSimple.education](https://shr.pn/fFpw)**
 
@@ -32,45 +47,22 @@ Natural Language Processing (NLP): TensorFlow Text Generation, Hugging Face Tran
 ![DataSimple Chatbot Interface](Phase%201/docs/Ai-Teacher-Brandyn.jpg)
 
 
-## How to Use This Repository
-AWS Bedrock Knowledge Bases require a "sidecar" .metadata.json file for every single document to allow Pinecone to perform metadata filtering (e.g., filtering out Level 6 projects when a beginner asks a question). Instead of managing hundreds of individual JSON files manually, this pipeline manages a single master_metadata.json file and automates the extraction.
+## How to Use This Repository (Metadata Pipeline)
+AWS Bedrock Knowledge Bases require a "sidecar" `.metadata.json` file for every single document to allow Pinecone to perform metadata filtering (e.g., filtering out Level 6 projects when a beginner asks a question). Instead of managing hundreds of individual JSON files manually, this pipeline manages a single `master_metadata.json` file and automates the extraction.
 
 ### Step 1: Update the Master JSON
-When a new guided project or data tip is published, add a new block to master_metadata.json using the standardized tagging system:
+When a new guided project or data tip is published, add a new block to `master_metadata.json` using the standardized tagging system:
 
-contentType: "guided_project" or "data_tip"
-
-difficultyLevel: 1 through 10
-
-topic: "Data Analysis", "Data Visualization", "Machine Learning", "Deep Learning", or "Deep Learning NLP"
-
-libraries: e.g., ["Pandas", "Seaborn"], ["TensorFlow", "Hugging Face"]
-
-hasCode: "true" or "false"
-
-hasVideo: "true" or "false" (Allows the LLM to know if a video exists)
-
-videoUrl: "https://youtube.com/..." (Allows the LLM to provide the student with a direct link)
+* `contentType:` "guided_project" or "data_tip"
+* `difficultyLevel:` 1 through 10
+* `topic:` "Data Analysis", "Data Visualization", "Machine Learning", "Deep Learning", or "Deep Learning NLP"
+* `libraries:` e.g., ["Pandas", "Seaborn"], ["TensorFlow", "Hugging Face"]
+* `hasCode:` "true" or "false"
+* `hasVideo:` "true" or "false" (Allows the LLM to know if a video exists)
+* `videoUrl:` "https://youtube.com/..." (Allows the LLM to provide the student with a direct link)
 
 ### Step 2: Generate the Sidecar Files
 Run the Python automation script to unpack the master JSON into the individual files Bedrock expects.
 
-Bash
+```bash
 python generate_bedrock_sidecars.py
-This script will dynamically read the master catalog and create a folder called bedrock_metadata_sidecars/ containing the exact [filename].md.metadata.json format required by AWS.
-
-### Step 3: Sync to S3
-Upload your clean .md markdown files to your S3 bucket.
-
-Upload the newly generated .metadata.json files alongside them.
-
-Click "Sync" in your AWS Bedrock Knowledge Base Console to trigger the Amazon Titan embedding process and update the Pinecone vector database.
-
-## Key Learnings & Insights from Phase 2
-Phase 2 focused on evolving the architecture into a **Closed-Loop Multi-Agent System** capable of administering dynamic practice tests and generating customized study plans. Key insights include:
-
-* **Overcoming the AWS API Gateway Timeout:** AWS API Gateway has a strict, unchangeable 29.0-second timeout limit. Complex multi-agent loops (e.g., Test Agent grades -> Supervisor intercepts -> Learn Agent searches DB) exceeded this limit. The solution was decoupling tasks and utilizing faster "engine swaps" (shifting from Claude 4.5 Sonnet to Claude 4.5 Haiku for simple grading tasks).
-* **Leveraging AWS Bedrock Prompt Caching:** By severing the Test Agent's connection to the vector database and embedding a massive 21-question "Question Bank" directly into the system prompt (>1,024 tokens), we triggered AWS's automatic prompt caching. This reduced inference times to 3-5 seconds and slashed token costs, successfully bypassing the API Gateway limit.
-* **Zero-Hallucination Curriculum Routing (The "Cheat Code"):** To guarantee the AI never recommends fake or external courses (like Kaggle), specific curriculum string tags (e.g., `-- [TITLE] --`) were hardcoded directly into the explanations within the prompt's Question Bank. The LLM simply reads its own scratchpad history to serve perfect, hallucination-free project recommendations at the end of a test.
-* **Invisible State Tracking via XML:** LLMs struggle to count turns in a conversation. By forcing the agent to use a hidden `<thinking>` XML scratchpad before generating a response, the agent accurately tracks test state (e.g., "Question 2 of 3") without exposing the internal logic to the end-user UI.
-* **Alias vs. Version Management:** To maintain a clean architecture and avoid updating Lambda code for every prompt change, updates were deployed by minting new Bedrock "Versions" and updating the *existing* "Production Alias," rather than creating a chain reaction of new aliases.
