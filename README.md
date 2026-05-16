@@ -5,9 +5,9 @@ This repository contains the architecture, data preparation, and metadata strate
 
 ![DataSimple AI Architecture Diagram](Phase%202/docs/Architecture-DataSimple-Chatbot.jpg)
 
-**[Click here to read the full Architecture Report of Phase 2 (PDF)](Phase%202/docs/DataSimple-Chatbot-Project-Report-Phase%202.pdf)**
+**[Click here to read the full Architecture Report of Phase 2 (PDF)](https://shr.pn/SaIv)**
 
-**[Click here to read Testing and Optimization of Phase 2 (PDF)](Phase%202/docs/DataSimple-Chatbot-Project-Report-Phase-2-Testing.pdf)**
+**[Click here to read Testing and Optimization of Phase 2 (PDF)](https://shr.pn/PpvB)**
 
 ![Phase 2 Experiments](Phase%202/docs/Phase-2-Experiments.png)
 
